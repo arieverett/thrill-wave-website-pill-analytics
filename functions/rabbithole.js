@@ -54,8 +54,8 @@ const PAGE = /* html */ `<!doctype html>
 <meta property="og:url" content="https://thrillwave.com/rabbithole">
 <meta property="og:image" content="https://thrillwave.com/images/og/rabbithole.jpg">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="A red pill and a blue pill over green Matrix code, with the words Down the rabbit hole">
+<meta property="og:image:height" content="480">
+<meta property="og:image:alt" content="Down the rabbit hole: a red pill with a rabbit and a blue pill with a steak, over green Matrix code">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://thrillwave.com/images/og/rabbithole.jpg">
 <link rel="icon" href="/favicon.ico">
