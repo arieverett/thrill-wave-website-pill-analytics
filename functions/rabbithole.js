@@ -52,12 +52,12 @@ const PAGE = /* html */ `<!doctype html>
 <meta property="og:title" content="Down the Rabbit Hole">
 <meta property="og:description" content="Who took the red pill, and who kept scrolling.">
 <meta property="og:url" content="https://thrillwave.com/rabbithole">
-<meta property="og:image" content="https://thrillwave.com/images/og/rabbithole.jpg">
+<meta property="og:image" content="https://thrillwave.com/images/og/rabbithole.jpg?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="480">
 <meta property="og:image:alt" content="Down the rabbit hole: a red pill with a rabbit and a blue pill with a steak, over green Matrix code">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://thrillwave.com/images/og/rabbithole.jpg">
+<meta name="twitter:image" content="https://thrillwave.com/images/og/rabbithole.jpg?v=2">
 <link rel="icon" href="/favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" nonce="__NONCE__">
