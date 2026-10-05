@@ -155,7 +155,9 @@ section { margin-top: 16px; }
 /* Lock screen */
 .lock { max-width: 460px; margin: 12vh auto 0; }
 .lock form { display: flex; gap: 8px; margin-top: 18px; }
-.lock input { flex: 1; font: inherit; color: var(--fg); background: #000; border: 1px solid var(--dim); border-radius: 4px; padding: 10px 12px; }
+.lock input { flex: 1; min-width: 0; font: inherit; color: var(--fg); background: #000; border: 1px solid var(--dim); border-radius: 4px; padding: 10px 12px; }
+/* 16px stops phone browsers zooming in when the box is tapped */
+@media (hover: none), (pointer: coarse), (max-width: 760px) { .lock input, .lock button { font-size: 16px; } }
 .lock input:focus, button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 .err { color: var(--red); font-size: 12px; margin-top: 10px; min-height: 18px; }
 [hidden] { display: none !important; }
@@ -417,7 +419,8 @@ table.sr { position: absolute; left: -9999px; }
       const v = $('key').value.trim();
       if (v) location.assign('/rabbithole?key=' + encodeURIComponent(v));
     });
-    $('key').focus();
+    // Put the cursor in the box on computers only: on phones it pops the keyboard up and shifts the page.
+    if (matchMedia('(hover: hover) and (pointer: fine)').matches) $('key').focus();
   } else {
     load();
     setInterval(() => { if (!document.hidden) load(); }, 30000);
