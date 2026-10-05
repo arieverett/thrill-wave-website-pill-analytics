@@ -182,7 +182,7 @@ export async function onRequestGet({ request, env }) {
 export const COOKIE = 'tw_rabbithole';
 
 // Keys are compared loosely so a quote can be typed naturally: case, spaces and punctuation
-// don't matter ("There is no spoon." = "there-is-no-spoon" = "thereisnospoon").
+// don't matter ("Hello, world!" = "hello-world" = "helloworld").
 const normalize = (value) => String(value).toLowerCase().replace(/[^a-z0-9]/g, '');
 
 const sha256 = async (value) =>
