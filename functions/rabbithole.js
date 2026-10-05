@@ -78,6 +78,7 @@ body { min-height: 100vh; }
 header { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 14px; margin-bottom: 28px; }
 .brand { color: var(--green); font-weight: 700; letter-spacing: .14em; font-size: 13px; }
 .brand b { color: var(--fg); }
+.brand-emoji { letter-spacing: .2em; margin-left: .35em; }
 .status { color: var(--muted); font-size: 12px; }
 .status .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-right: 6px; box-shadow: 0 0 8px var(--green); animation: pulse 2s infinite; }
 @keyframes pulse { 50% { opacity: .35; } }
@@ -167,7 +168,7 @@ table.sr { position: absolute; left: -9999px; }
 <canvas id="rain" aria-hidden="true"></canvas>
 <div class="wrap">
   <header>
-    <div class="brand">THRILL WAVE <b>//</b> THE RABBIT HOLE</div>
+    <div class="brand">THRILL WAVE <b>//</b> THE RABBIT HOLE <span class="brand-emoji" aria-hidden="true">🐇 🥩</span></div>
     <div class="status" id="status"><span class="dot"></span>Offline</div>
     <div class="tools" id="tools" hidden>
       <button type="button" id="refresh">Refresh</button>
